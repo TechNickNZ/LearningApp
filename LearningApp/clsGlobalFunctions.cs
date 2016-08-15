@@ -9,42 +9,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Preferences;
 
 namespace LearningApp
 {
 
     class clsGlobalFunctions : Activity
     {
-        ISharedPreferences GlobalPreferences;
-        ISharedPreferencesEditor GlobalPrefEditor;
 
         public static Boolean LoggedIn = false;
-
-        public Boolean GetGlobalBoolean(String valueKey)
-        {
-            return GlobalPreferences.GetBoolean(valueKey, false);
-        }
-        public void SetGlobalBoolean(String valueKey, Boolean valueData)
-        {
-            GlobalPrefEditor.PutBoolean(valueKey, valueData);
-        }
-        public String GetGlobalString(String valueKey)
-        {
-            return GlobalPreferences.GetString(valueKey, "");
-        }
-        public void SetGlobalString(String valueKey, String valueData)
-        {
-            GlobalPrefEditor.PutString(valueKey, valueData);
-        }
-        public int GetGlobalInt(String valueKey)
-        {
-            return GlobalPreferences.GetInt(valueKey, 0);
-        }
-        public void SetGlobalInt(String valueKey, int valueData)
-        {
-            GlobalPrefEditor.PutInt(valueKey, valueData);
-        }
 
         public void Logout()
         {

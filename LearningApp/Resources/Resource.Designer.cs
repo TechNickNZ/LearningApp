@@ -60,14 +60,17 @@ namespace LearningApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05000b
-			public const int MyButton = 2131034123;
+			// aapt resource value: 0x7f05000c
+			public const int MyButton = 2131034124;
 			
 			// aapt resource value: 0x7f050008
 			public const int button1 = 2131034120;
 			
 			// aapt resource value: 0x7f05000a
 			public const int button2 = 2131034122;
+			
+			// aapt resource value: 0x7f05000d
+			public const int cmdShowCount = 2131034125;
 			
 			// aapt resource value: 0x7f050003
 			public const int editText1 = 2131034115;
@@ -96,6 +99,9 @@ namespace LearningApp
 			// aapt resource value: 0x7f050005
 			public const int textView2 = 2131034117;
 			
+			// aapt resource value: 0x7f05000b
+			public const int txtCount = 2131034123;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -113,7 +119,10 @@ namespace LearningApp
 			public const int layout1 = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int layout2 = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Main = 2130903042;
 			
 			static Layout()
 			{

@@ -13,6 +13,8 @@ namespace LearningApp
     {
         int count = 1;
 
+        clsCommonFunctions cmnFunctions = new clsCommonFunctions();
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -24,6 +26,9 @@ namespace LearningApp
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
             button.Click += delegate { DoButtonPress();  };
+
+            button = FindViewById<Button>(Resource.Id.cmdShowCount);
+            button.Click += delegate { ShowCount(); };
 
         }
 
@@ -51,12 +56,19 @@ namespace LearningApp
             }
         }
 
+        void ShowCount()
+        {
+            StartActivity(typeof(layout2));
+        }
+
         void DoButtonPress()
         {
 
 
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Text = string.Format("{0} clicks!", count++);
+
+            cmnFunctions.SetGlobalInt("gblCount", count);
 
             Restart();
         }

@@ -10,13 +10,16 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+
 namespace LearningApp
 {
     [Activity(Label = "layout1")]
     public class layout1Activity : Activity 
     {
 
+        clsCommonFunctions cmnFunctions = new clsCommonFunctions();
         clsGlobalFunctions globalFuncitons = new clsGlobalFunctions();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
