@@ -6,7 +6,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace LearningApp
+namespace thorpenCommonFunctions
 {
     [Activity(Label = "LearningApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
